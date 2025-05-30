@@ -28,7 +28,7 @@ This project develops and compares multiple machine learning models to accuratel
 - **Medical History**: Hypertension, diabetes, coronary artery disease
 - **Physical Symptoms**: Appetite, pedal edema, anemia
 
-## 📈 Methodology
+## Methodology
 
 ### 1. Data Preprocessing
 - **Missing Value Treatment**: Median imputation for numerical variables, mode imputation for categorical variables
