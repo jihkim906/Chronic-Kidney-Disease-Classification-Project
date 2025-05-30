@@ -78,7 +78,7 @@ This project develops and compares multiple machine learning models to accuratel
 - **Feature Impact**: Categorical variables improve model performance significantly
 - **Patient Subgroups**: Three distinct patient clusters identified for personalized modeling
 
-## 🔍 Key Findings
+## Key Findings
 
 ### Clinical Relevance
 1. **Hemoglobin** emerges as the most discriminative feature, aligning with medical knowledge about anemia in CKD patients
