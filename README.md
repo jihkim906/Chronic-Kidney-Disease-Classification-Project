@@ -12,7 +12,7 @@ This project develops and compares multiple machine learning models to accuratel
 
 ## Dataset Information
 
-- **Source**: [UCI Machine Learning Repository (Dataset ID: 336)](https://archive.ics.uci.edu/dataset/336/chronic+kidney+disease)
+- **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/336/chronic+kidney+disease)
 - **Size**: 400 patients, 25 clinical features
 - **Target Distribution**: 
   - CKD patients: 250 (62.5%)
