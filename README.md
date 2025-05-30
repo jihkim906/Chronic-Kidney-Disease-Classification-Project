@@ -72,13 +72,11 @@ This project develops and compares multiple machine learning models to accuratel
 | Decision Tree (Numerical Only) | 95.00% | 94.67% |
 | K-Nearest Neighbors | 79.17% | 78.00% |
 
-### Key Clinical Insights
+### Key Features
 - **Primary Predictor**: Hemoglobin levels (root node in decision tree)
 - **Secondary Predictor**: Blood urea levels
 - **Feature Impact**: Categorical variables improve model performance significantly
 - **Patient Subgroups**: Three distinct patient clusters identified for personalized modeling
-
-## Key Findings
 
 ### Clinical Relevance
 1. **Hemoglobin** emerges as the most discriminative feature, aligning with medical knowledge about anemia in CKD patients
