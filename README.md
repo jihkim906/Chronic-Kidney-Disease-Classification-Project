@@ -80,8 +80,7 @@ This project develops and compares multiple machine learning models to accuratel
 
 ### Clinical Relevance
 1. **Hemoglobin** emerges as the most discriminative feature, aligning with medical knowledge about anemia in CKD patients
-2. **Blood Urea** serves as a secondary predictor, reflecting kidney function deterioration
-3. **Multi-feature approach** outperforms single-feature models, emphasizing comprehensive clinical assessment
+2. **Multi-feature approach** outperforms single-feature models, emphasizing comprehensive clinical assessment
 
 ## Clinical Applications
 
