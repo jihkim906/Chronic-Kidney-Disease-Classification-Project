@@ -81,14 +81,5 @@ This project develops and compares multiple machine learning models to accuratel
 1. **Hemoglobin** emerges as the most discriminative feature, aligning with medical knowledge about anemia in CKD patients
 2. **Multi-feature approach** outperforms single-feature models, emphasizing comprehensive clinical assessment
 
-## Clinical Applications
-
-### Immediate Implementation
-- **Screening Tool**: Deploy in primary care settings using standard lab values
-- **Risk Stratification**: Identify high-risk patients for nephrology referral
-- **Early Detection**: Integrate into routine health checkups
-
-### Operational Benefits
-- **Resource Optimization**: Prioritize patient care based on risk scores
-- **Cost Reduction**: Enable early intervention to prevent disease progression
-- **Workflow Integration**: Clear decision rules facilitate clinical adoption
+## Conclusion
+This project demonstrates that machine learning can achieve high Chronic kidney disease (CKD) classification accuracy using routine clinical data, showing practical potential for improving patient outcomes through early disease detection and personalized care strategies. Future work should focus on validating these models using external datasets from different hospitals and patient populations to confirm their reliability and support real-world clinical adoption.
