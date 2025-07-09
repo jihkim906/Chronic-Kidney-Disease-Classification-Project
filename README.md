@@ -72,25 +72,14 @@ This project develops and compares multiple machine learning models to accuratel
 | Decision Tree (Numerical Only) | 95.00% | 94.67% |
 | K-Nearest Neighbors | 79.17% | 78.00% |
 
-### Key Features
+### Key Findings
 - **Primary Predictor**: Hemoglobin levels (root node in decision tree)
-- **Secondary Predictor**: Blood urea levels
 - **Feature Impact**: Categorical variables improve model performance significantly
 - **Patient Subgroups**: Three distinct patient clusters identified for personalized modeling
 
 ### Clinical Relevance
 1. **Hemoglobin** emerges as the most discriminative feature, aligning with medical knowledge about anemia in CKD patients
-2. **Blood Urea** serves as a secondary predictor, reflecting kidney function deterioration
-3. **Multi-feature approach** outperforms single-feature models, emphasizing comprehensive clinical assessment
+2. **Multi-feature approach** outperforms single-feature models, emphasizing comprehensive clinical assessment
 
-## Clinical Applications
-
-### Immediate Implementation
-- **Screening Tool**: Deploy in primary care settings using standard lab values
-- **Risk Stratification**: Identify high-risk patients for nephrology referral
-- **Early Detection**: Integrate into routine health checkups
-
-### Operational Benefits
-- **Resource Optimization**: Prioritize patient care based on risk scores
-- **Cost Reduction**: Enable early intervention to prevent disease progression
-- **Workflow Integration**: Clear decision rules facilitate clinical adoption
+## Conclusion
+This project demonstrates that machine learning can achieve high Chronic kidney disease (CKD) classification accuracy using routine clinical data, showing practical potential for improving patient outcomes through early disease detection and personalized care strategies. Future work should focus on validating these models using external datasets from different hospitals and patient populations to confirm their reliability and support real-world clinical adoption.
