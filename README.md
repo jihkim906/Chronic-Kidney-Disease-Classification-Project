@@ -21,13 +21,6 @@ This project develops and compares multiple machine learning models to accuratel
   - Numerical variables: 11 (age, blood pressure, blood glucose, etc.)
   - Categorical variables: 14 (including target variable)
 
-### Clinical Features
-- **Blood Tests**: Hemoglobin, packed cell volume, white/red blood cell counts
-- **Kidney Function**: Blood urea, serum creatinine, blood glucose
-- **Urine Tests**: Specific gravity, albumin, sugar levels
-- **Medical History**: Hypertension, diabetes, coronary artery disease
-- **Physical Symptoms**: Appetite, pedal edema, anemia
-
 ## Methodology
 
 ### 1. Data Preprocessing
