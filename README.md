@@ -7,7 +7,7 @@ This project develops and compares multiple machine learning models to accuratel
 ### Key Achievements
 - **99.17% accuracy** using cluster-based decision trees
 - **99.33% AUC score** demonstrating excellent diagnostic performance
-- Identification of key clinical predictors (hemoglobin and blood urea)
+- Identification of key clinical predictor (hemoglobin)
 - Implementation of patient subgroup-based modeling approach
 
 ## Dataset Information
