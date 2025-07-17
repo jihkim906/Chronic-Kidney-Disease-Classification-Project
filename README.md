@@ -1,77 +1,66 @@
-# Chronic Kidney Disease Classification
+# Chronic Kidney Disease (CKD) Classification
 
-## Project Overview
+This project presents a machine learning approach to classify patients with Chronic Kidney Disease (CKD) using clinical data. The primary goal is to develop a high-accuracy model for early detection, which can significantly improve patient outcomes. The analysis was performed on the [Chronic Kidney Disease dataset](https://archive.ics.uci.edu/dataset/336/chronic+kidney+disease) from the UCI Machine Learning Repository.
 
-This project develops and compares multiple machine learning models to accurately classify patients with Chronic Kidney Disease based on their clinical features. The analysis includes 400 patients (250 CKD cases and 150 healthy controls) with 25 clinical variables including blood tests, urine tests, and other medical measurements.
+## Key Achievements
 
-### Key Achievements
-- **99.17% accuracy** using cluster-based decision trees
-- **99.33% AUC score** demonstrating excellent diagnostic performance
-- Identification of key clinical predictor (hemoglobin)
+-   Developed a novel **Cluster-Based Decision Tree model** that achieved **99.17% accuracy** and a **99.33% AUC score**.
+-   Identified **hemoglobin** as the most significant clinical predictor of CKD, which aligns with existing medical knowledge.
+-   Demonstrated that incorporating both numerical and categorical features significantly improves model performance.
 
-## Dataset Information
+## Dataset
 
-- **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/336/chronic+kidney+disease)
-- **Size**: 400 patients, 25 clinical features
-- **Target Distribution**: 
-  - CKD patients: 250 (62.5%)
-  - Healthy controls: 150 (37.5%)
-- **Feature Types**: 
-  - Numerical variables: 11 (age, blood pressure, blood glucose, etc.)
-  - Categorical variables: 14 (including target variable)
+-   **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/336/chronic+kidney+disease)
+-   **Instances**: 400 (250 CKD patients, 150 healthy controls)
+-   **Features**: 25 clinical variables, including 11 numerical and 14 categorical
 
 ## Methodology
 
-### 1. Data Preprocessing
-- **Missing Value**: Median imputation for numerical variables, mode imputation for categorical variables
-- **Data Cleaning**: Removal of tab characters and standardization of categorical values
-- **Feature Engineering**: Creation of dummy variables for categorical features
-- **Outlier**: Preserved outliers due to medical significance
+The project followed a structured machine learning workflow:
 
-### 2. Exploratory Data Analysis
-- Statistical summary and distribution analysis
-- Correlation analysis revealing key relationships:
-  - Hemoglobin & Packed Cell Volume: r = 0.90
-  - Blood Urea with hemo/rbcc/pcv: r ≈ -0.60
-- Missing value pattern analysis (up to 38% missing in some variables)
+### 1. Data Preprocessing
+
+-   **Data Cleaning**: Standardized categorical values and removed extraneous characters (e.g., tab characters in `class` and `dm` variables).
+-   **Missing Value Imputation**: Used median imputation for numerical features and mode (most frequent) imputation for categorical features to handle missing data.
+-   **Outlier Handling**: Preserved outliers as they were considered medically significant.
+
+### 2. Exploratory Data Analysis (EDA)
+
+-   Conducted statistical analysis and visualized feature distributions to understand the data's characteristics.
+-   Performed correlation analysis, which revealed strong relationships between key variables, such as:
+    -   Hemoglobin (`hemo`) and Packed Cell Volume (`pcv`): **r = 0.90**
+    -   Blood Urea (`bu`) and Hemoglobin (`hemo`): **r ≈ -0.60**
 
 ### 3. Feature Selection
-- Random Forest-based feature importance ranking
-- Selection of top 25 most discriminative features
-- Inclusion of both numerical and categorical variables
+
+-   Utilized a **Random Forest** classifier to rank features by importance.
+-   Selected the top 25 most discriminative features for model training, including both numerical and categorical variables.
 
 ### 4. Model Development
 
-#### Models Implemented:
-1. **K-Nearest Neighbors (KNN)** - Numerical features only
-2. **Decision Tree** - Numerical features only  
-3. **Decision Tree** - All features (numerical + categorical)
-4. **Cluster-Based Decision Trees** - Patient subgroup-specific models
-
-#### Hyperparameter Optimization:
-- KNN: Optimal k = 2
-- Decision Trees: Optimal depth = 4 (determined via cost complexity pruning)
-- Clustering: k = 3 clusters for patient subgrouping
+Four different models were implemented and evaluated:
+1.  **K-Nearest Neighbors (KNN)**: A baseline model using only numerical features.
+2.  **Decision Tree**: A model trained on only numerical features.
+3.  **Decision Tree (All Features)**: An improved model using both numerical and categorical features.
+4.  **Cluster-Based Decision Trees**: A more sophisticated approach where patients were first grouped into three distinct clusters using K-means, and then a separate Decision Tree model was trained for each subgroup.
 
 ## Results
 
-### Model Performance Comparison
+The models were evaluated on their accuracy and AUC scores, with the following results:
 
-| Model | Accuracy | AUC Score |
-|-------|----------|-----------|
+| Model                        | Accuracy | AUC Score |
+| ---------------------------- | :------: | :-------: |
 | **Cluster-Based Decision Trees** | **99.17%** | **99.33%** |
-| Decision Tree (All Features) | 95.83% | 95.33% |
-| Decision Tree (Numerical Only) | 95.00% | 94.67% |
-| K-Nearest Neighbors | 79.17% | 78.00% |
-
-### Key Findings
-- **Primary Predictor**: Hemoglobin levels (root node in decision tree)
-- **Feature Impact**: Categorical variables improve model performance significantly
-- **Patient Subgroups**: Three distinct patient clusters identified for personalized modeling
-
-### Clinical Relevance
-1. **Hemoglobin** emerges as the most discriminative feature, aligning with medical knowledge about anemia in CKD patients
-2. **Multi-feature approach** outperforms single-feature models, emphasizing comprehensive clinical assessment
+| Decision Tree (All Features) |  95.83%  |  95.33%   |
+| Decision Tree (Numerical Only) |  95.00%  |  94.67%   |
+| K-Nearest Neighbors (KNN)    |  79.17%  |  78.00%   |
 
 ## Conclusion
-This project demonstrates that machine learning can achieve high Chronic kidney disease (CKD) classification accuracy using routine clinical data, showing practical potential for improving patient outcomes through early disease detection and personalized care strategies. Future work should focus on validating these models using external datasets from different hospitals and patient populations to confirm their reliability and support real-world clinical adoption.
+
+This project successfully demonstrates the potential of machine learning for accurate and early detection of Chronic Kidney Disease. The high performance of the Cluster-Based Decision Tree model suggests that personalized modeling based on patient subgroups can lead to superior results.
+
+### Future Work
+
+-   Validate the models on external datasets to ensure generalizability.
+-   Explore other advanced ensemble methods to potentially further improve accuracy.
+-   Deploy the best-performing model as a web application for clinical decision support.
