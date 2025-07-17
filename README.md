@@ -23,10 +23,10 @@ This project develops and compares multiple machine learning models to accuratel
 ## Methodology
 
 ### 1. Data Preprocessing
-- **Missing Value Treatment**: Median imputation for numerical variables, mode imputation for categorical variables
+- **Missing Value**: Median imputation for numerical variables, mode imputation for categorical variables
 - **Data Cleaning**: Removal of tab characters and standardization of categorical values
 - **Feature Engineering**: Creation of dummy variables for categorical features
-- **Outlier Handling**: Preserved outliers due to medical significance
+- **Outlier**: Preserved outliers due to medical significance
 
 ### 2. Exploratory Data Analysis
 - Statistical summary and distribution analysis
