@@ -1,10 +1,10 @@
 # Chronic Kidney Disease (CKD) Classification
 
-This project presents a machine learning approach to classify patients with Chronic Kidney Disease (CKD) using clinical data. The primary goal is to develop a high-accuracy model for early detection, which can significantly improve patient outcomes. The analysis was performed on the [Chronic Kidney Disease dataset](https://archive.ics.uci.edu/dataset/336/chronic+kidney+disease) from the UCI Machine Learning Repository.
+This project presents a machine learning approach to classify patients with Chronic Kidney Disease (CKD) using clinical data. The primary goal is to develop a high-accuracy model for early detection, which can significantly improve patient outcomes. The analysis used the [Chronic Kidney Disease dataset](https://archive.ics.uci.edu/dataset/336/chronic+kidney+disease) from the UCI Machine Learning Repository.
 
 ## Key Achievements
 
--   Developed a novel **Cluster-Based Decision Tree model** that achieved **99.17% accuracy** and a **99.33% AUC score**.
+-   Developed a **Cluster-Based Decision Tree model** that achieved **99.17% accuracy** and a **99.33% AUC score**.
 -   Identified **hemoglobin** as the most significant clinical predictor of CKD, which aligns with existing medical knowledge.
 -   Demonstrated that incorporating both numerical and categorical features significantly improves model performance.
 
@@ -57,7 +57,7 @@ The models were evaluated on their accuracy and AUC scores, with the following r
 
 ## Conclusion
 
-This project successfully demonstrates the potential of machine learning for accurate and early detection of Chronic Kidney Disease. The high performance of the Cluster-Based Decision Tree model suggests that personalized modeling based on patient subgroups can lead to superior results.
+This project demonstrates the potential of machine learning for accurate and early detection of Chronic Kidney Disease. The high performance of the Cluster-Based Decision Tree model suggests that personalized modeling based on patient subgroups can lead to better results.
 
 ### Future Work
 
